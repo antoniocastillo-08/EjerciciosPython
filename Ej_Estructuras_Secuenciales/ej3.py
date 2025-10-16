@@ -2,7 +2,7 @@
 # Programa que calcula las horas y minutos correspondientes a una cantidad de minutos
 # Autor: Antonio Castillo Jiménez
 #
-print("Conversión de minutos a horas")
+print("---Conversión de minutos a horas---")
 
 minutos_introducidos = int(input("Introduzca los minutos a convertir: "))
 
