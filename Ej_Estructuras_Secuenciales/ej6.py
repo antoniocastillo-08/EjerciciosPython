@@ -4,18 +4,24 @@
 #
 print("---Nota Final de un Examen---")
 
-valores_respuestas ={
-    "correcta": 5,
-    "incorrecta": -1,
-    "blanco": 0
-}
+# valores_respuestas ={
+#     "correcta": 5,
+#     "incorrecta": -1,
+#     "blanco": 0
+# }
+
+correct_points = 5
+incorrect_points = -1
+blank_points = 0
 
 correctas = int(input("Número de respuestas correctas: "))
 incorrectas = int(input("Número de respuestas incorrectas: "))
 blanco = int(input("Número de respuestas en blanco: "))
 
-puntos_totales = (correctas * valores_respuestas["correcta"] + incorrectas * valores_respuestas["incorrecta"]
-                  + blanco * valores_respuestas["blanco"])
+# puntos_totales = (correctas * valores_respuestas["correcta"] + incorrectas * valores_respuestas["incorrecta"]
+#                   + blanco * valores_respuestas["blanco"])
+
+puntos_totales = (correctas * correct_points) + (incorrectas * incorrect_points) + (blanco * blank_points)
 
 print("Puntos totales obtenidos:", puntos_totales)
 
