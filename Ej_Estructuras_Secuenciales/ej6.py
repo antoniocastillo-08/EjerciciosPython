@@ -2,6 +2,7 @@
 # Programa que calcula la nota final de un examen
 # Autor: Antonio Castillo
 #
+I = int(input("Número de respuestas en blanco: "))
 print("---Nota Final de un Examen---")
 
 # valores_respuestas ={
@@ -16,7 +17,7 @@ blank_points = 0
 
 correctas = int(input("Número de respuestas correctas: "))
 incorrectas = int(input("Número de respuestas incorrectas: "))
-blanco = int(input("Número de respuestas en blanco: "))
+blanco = I
 
 # puntos_totales = (correctas * valores_respuestas["correcta"] + incorrectas * valores_respuestas["incorrecta"]
 #                   + blanco * valores_respuestas["blanco"])

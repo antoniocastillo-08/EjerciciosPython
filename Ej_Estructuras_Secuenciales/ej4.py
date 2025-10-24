@@ -7,4 +7,5 @@ print("---Invertir un número de dos cifras---")
 
 number = input("Introduzca un número de dos cifras: ")
 inverted_number = int(number[::-1])
+
 print(inverted_number)
