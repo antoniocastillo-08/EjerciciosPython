@@ -1,24 +1,20 @@
-def main():
-    numeros = []
+"""
+ Programa que lee 5 números por teclado y los almacene en una lista y rota los elementos a la siguiente posición
+ Autor: Antonio Castillo Jiménez
+"""
+print("---Lista introducido para rotarlo--")
 
-    print("Introduce 5 números:")
-    for i in range(5):
-        num = int(input(f"Número {i + 1}: "))
-        numeros.append(num)
+array = []
 
-    print("\nLista original:")
-    print(numeros)
+for i in range(5):
+    array.append(int(input("Introduzca los valores para el array: ")))
 
-    ultimo = numeros[-1]
+print(array)
 
-    for i in range(len(numeros) - 1, 0, -1):
-        numeros[i] = numeros[i - 1]
+for i in range(len(array)):
+    print(i)
+    if array[i] < array[i + 1]:
+        array[i + 1] = array[i]
+    else:
+        array[i + 1] = array[i]
 
-    numeros[0] = ultimo
-
-    print("\nLista después de rotar:")
-    print(numeros)
-
-
-if __name__ == "__main__":
-    main()
