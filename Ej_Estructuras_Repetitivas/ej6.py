@@ -1,5 +1,5 @@
 #
-# Programa que muestra los n primeros numeros primos
+# Programa que muestra los n primeros números primos
 # Autor: Antonio Castillo Jiménez
 #
 print("---Giving existing prime numbers till a N number---")

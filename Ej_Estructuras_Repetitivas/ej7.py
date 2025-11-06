@@ -9,7 +9,7 @@ while True:
     try:
         importe_prestamo = round(float(input("Introduzca el importe del prestamo: ")),2)
         tasa_interes= float(input("Introduzca la tasa de interes anual: ")) / 100 / 12
-        plazo_pagos= int(input("Introduzca el plazo del pago en años: ")) * 12
+        plazo_pagos= int(input("Introduzca el plazo del pago en meses: "))
 
         if importe_prestamo < 0 or tasa_interes < 0 or plazo_pagos <= 0:
             print("No se puede introducir datos negativos.")
