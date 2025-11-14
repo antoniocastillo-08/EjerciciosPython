@@ -6,9 +6,8 @@ Crear duraciones de tiempos.
 Las duraciones de tiempo se pueden comparar.
 A las duraciones de tiempo les puedo sumar y restar segundos.
 Las duraciones de tiempo se pueden sumar y restar.
-
-
 """
+
 class Duration:
     def __init__(self, hours, minutes, seconds):
         total = hours * 3600 + minutes * 60 + seconds
@@ -34,6 +33,8 @@ class Duration:
 
     def __eq__(self, other):
         return self.to_seconds() == other.to_seconds()
+    def __ne__(self, other):
+        return not self == other
     def __lt__(self, other):
         return self.to_seconds() < other.to_seconds()
     def __gt__(self, other):
@@ -56,6 +57,7 @@ class Duration:
             raise TypeError
 
 def main():
+
     t = Duration(1, 120, 12022)
     d = Duration(1, 120, 120)
     print(t)
